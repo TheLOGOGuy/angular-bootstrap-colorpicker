@@ -22,7 +22,9 @@
     "karma-jasmine": "^0.3.6"
   },
   "scripts": {
-    "test": "karma start test/karma.conf.js"
+    "test": "karma start test/karma.conf.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -38,5 +40,9 @@
   "bugs": {
     "url": "https://github.com/buberdds/angular-bootstrap-colorpicker/issues"
   },
-  "homepage": "https://github.com/buberdds/angular-bootstrap-colorpicker"
+  "homepage": "https://github.com/buberdds/angular-bootstrap-colorpicker",
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.316.1"
+  }
 }
